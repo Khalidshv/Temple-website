@@ -116,7 +116,7 @@ img {
 @media screen and (max-width: 1150px){
   .nav__menu{
     position: fixed;
-    top: 0;
+    top: -120%;
     left: 0;
     background-color: hsla(353, 98%, 90%, .4);
     backdrop-filter: blur(16px);
@@ -126,12 +126,26 @@ img {
     box-shadow: 0 4px 24px hsla(353, 90%, 4%, .2);
     transition: top .4s;
   }
+}
 
+.nav__list{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  row-gap: 2rem;
 }
 
 .nav__link{
-  
+  color: var(--black-color);
+  font-weight: var(--font-semi-bold);
 }
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
 
 /* Show menu */
 
