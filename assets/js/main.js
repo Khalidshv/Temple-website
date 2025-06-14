@@ -4,17 +4,18 @@ const navMenu = document.getElementById('nav-menu'),
       navClose = document.getElementById('nav-close');
 
 if(navToggle){
-    navToggle.addEventListener('click',()=>{
+    navToggle.addEventListener('click', ()=>{
         navMenu.classList.add('show-menu')
     })
 }
 
-if(navClose){
-    
-}
 
 /*=============== REMOVE MENU MOBILE ===============*/
-
+if(navClose){
+    navClose.addEventListener('click', ()=>{
+        navMenu.classList.remove('show-menu')
+    })
+}
 
 /*=============== ADD BLUR HEADER ===============*/
 
